@@ -12,6 +12,7 @@ import java.util.regex.*;
 public class HelloWorld {
 
     private static final String I = null;
+    private static String[][] texts;
     
   public static void main(String[] args) {
           Random dice = new Random();
@@ -20,8 +21,9 @@ public class HelloWorld {
           for(int counter=1; counter<=10;counter++) {
             number = 1+dice.nextInt(6);
             System.out.println(number + "");
-          
-
+            Scanner input = new Scanner (System.in);
+        
+}
   
       /* Below showSum(12, 45); is a CALL, showSum is a method name, (int num1, int num2) is are PARAMETERS,
       public static void showSum(int num1, int num2) is a HEADER, The variable you pass is called an ARGUMENT num1 and num2.
@@ -40,8 +42,8 @@ public class HelloWorld {
       //number as an argument
       doubleNumber1(integer);
           }
-          
-    }
+   
+    
     //Definition of the doubleNumber method 
     public static void doubleNumber1(int value)
     {
@@ -316,9 +318,9 @@ public class HelloWorld {
     System.out.println("Element at index 9: "
                        + anArray[9]);
     //Find the smallest number in an array
-  /*  findMinMax(new int[] {10,40,50,20,69,37});
+    findMinMax1(new int[] {10,40,50,20,69,37});
 }
-public static void findMinMax(int[] array) {
+public static void findMinMax1(int[] array) {
     if (array == null || array.length < 1)
         return;
     int min = array[0];
@@ -334,10 +336,78 @@ public static void findMinMax(int[] array) {
         }
     }
     System.out.println("min: " + min + "\nmax: " + max);
-    *\
-}
+    int x= 1;
+    //Sum of values in an Array
+    int bucky[]={ 21,16,86,21,3};
+    int sum=0;
+    
+    
+    for(int counter=0;counter<bucky.length;counter++) {
+        sum+=bucky[counter];
+    }
+    System.out.println("The sum of there numbers is " +sum);
+    //multi-deminisional Array
+    int[] values = { 3,5, 2343};
+    System.out.println(values[2]);
+    
+    int[][] grid = {
+        {3, 5, 2343},
+        {2, 4},
+        {1, 2, 3, 4}
+    };
+    
+    System.out.println(grid[1][1]);
+    System.out.println(grid[0][2]);
+    
+    String[][] texts = new String[2][3];
+    
+   
+    texts[0][1] = "Hello there";
+    
+    System.out.println(texts[0][1]);
+    
+    for(int row=0; row<grid.length; row++) {
+        for(int col=0; col < grid[row].length; col++) {
+            System.out.print(grid[row][col] + "\t");
+        }
+System.out.println();
 
+char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+// foreach loop enhanced loop
+for (char item: vowels) {
+   System.out.println(item);
+}
+//Arraylist of a given type
+ArrayList al = new ArrayList<>();
+    al.add("OC");
+    al.add("JP");
+    al.add(1,"A");
+    al.add(3,"8");
+    al.add(4,"8");  
+  System.out.println(al);//prints [OC, A, JP, 8, 8]
+    al.remove("A");
+    al.remove(3);
+  System.out.println(al);//prints [OC, JP, 8]
+    al.clear();
+System.out.println(al);//prints []
+    //exception handling
+      try{
+          System.out.println("Enter first num: ");
+          Scanner input = null;
+          int n1 = input.nextInt();
+          System.out.print("Enter second num: ");
+          int n2 = input.nextInt();
+          int sum1 = n1/n2;
+          System.out.print(sum1);
+      }
+    
       
+      catch (Exception e) {
+          System.out.println("You cant do that");
+      }
+      while(x==1);
+
+       
     /*Inheritance is a mechanism wherein a new class is derived from 
     an existing class. In Java, classes may inherit or acquire the 
     properties and methods of other classes. A class derived from 
@@ -356,8 +426,8 @@ public static void findMinMax(int[] array) {
         System.out.print("True or false will I pass this course?");
         boolean yes = true;
         System.out.println("This is" +  yes);
-        String x = "With an A ";
-        System.out.println(x+ " or atleast I'll attept to pass with an A");
+        String g = "With an A ";
+        System.out.println(g+ " or atleast I'll attept to pass with an A");
         int w = 95;
         System.out.print(w+ "or a");
         double n = 89.5;
@@ -416,7 +486,8 @@ public static void findMinMax(int[] array) {
         double length = 5.0;
         double width = 2.5;
         System.out.println(calculateArea(length, width));
-      }
+    }
+}
         private static void findMinMax(int[] js) {
     // TODO Auto-generated method stub
     
@@ -438,12 +509,23 @@ public static void findMinMax(int[] array) {
         double area;
         area = side1 * side2;
         return area;
-        
-      }
+   }
+     //try {
+    // File testFile = new File("//testFile.txt");
+     //testFile.createNewFile();
+     //System.out.println("testFile exists:"
+     //+ testFile.exists());
+   //}
+   //catch (IOException e) {
+     //System.out.println(e);
+   //}
+ //}
+     //ArrayIndexOut of BoundException
+     //int[] intArray = new int[5]
+     //intArray[5] = 27; 
      
-
+     //NullPointerException
+    //String name = null;
+    //System.out.print("Length of the string"+ name.length());
+  
 }
-	
-
-	
-
