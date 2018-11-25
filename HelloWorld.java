@@ -390,7 +390,29 @@ ArrayList al = new ArrayList<>();
   System.out.println(al);//prints [OC, JP, 8]
     al.clear();
 System.out.println(al);//prints []
-    //exception handling
+//Search an array and identify the index 0 where a value was found
+int[] ages = {25, 27, 48};
+int myAge = ages[0];
+int yourAge = ages[1];
+  System.out.println("My age is " + ages[0]);
+  // keyword this
+  class Apple{
+    public String name;
+    public void setName(String name) {
+      this.name = name;
+    }
+  }
+  //An attempt at polymorphism  
+  //class Horse extends Plant2{
+    //public void sound(){
+       //System.out.println("Neigh");   
+    //}
+    //Plant2 obj = new Horse();
+   // obj.sound();
+  
+  //}
+    
+//exception handling
       try{
           System.out.println("Enter first num: ");
           Scanner input = null;
@@ -529,3 +551,4 @@ System.out.println(al);//prints []
     //System.out.print("Length of the string"+ name.length());
   
 }
+   
